@@ -1,0 +1,164 @@
+/* <!-- Abdul Reeves
+Date: june, 28, 2024 --> */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.header-content .logo {
+  height: 100px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  /* text-align: center; */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+.hero {
+  background: url("images/home_background.webp") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+  height: 550px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 0 0 2rem;
+}
+main {
+  height: 500px;
+}
+.order-button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffcc00;
+  padding: 2rem 1rem;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item h3 {
+  margin: 0 0 1rem;
+}
+
+.info-item p {
+  margin: 0;
+}
+/* --------------------------------------------------------------------------------------- */
+/* MENU CSS */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.menu-item h3,
+.menu-item p {
+  padding: 10px;
+  margin: 0;
+}
+
+.menu-item h3 {
+  background-color: #f8b400;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* ORDERS CSS */

@@ -1,0 +1,73 @@
+<!-- Abdul Reeves
+Date: june, 28, 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Online - Gary Blue's Diner</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gary Blue's Diner</h1>
+      <nav>
+        <a href="menu.html">Our Menu</a>
+        <a href="index.html" class="active">Home</a>
+      </nav>
+    </header>
+    <main>
+      <form id="orderForm">
+        <fieldset>
+          <legend>Your Order</legend>
+          <label for="big-gary">Big Gary</label>
+          <input type="number" id="big-gary" name="big-gary" min="0" />
+
+          <label for="taters">Taters</label>
+          <input type="number" id="taters" name="taters" min="0" />
+
+          <label for="soup">Soup</label>
+          <input type="number" id="soup" name="soup" min="0" />
+
+          <label for="poutine">Poutine</label>
+          <input type="number" id="poutine" name="poutine" min="0" />
+
+          <label for="bucket-chicken">Bucket o' Chicken</label>
+          <input
+            type="number"
+            id="bucket-chicken"
+            name="bucket-chicken"
+            min="0"
+          />
+
+          <label for="salad">Salad</label>
+          <input type="number" id="salad" name="salad" min="0" />
+        </fieldset>
+        <fieldset>
+          <legend>Your Details</legend>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="card">Card Number</label>
+          <input
+            type="text"
+            id="card"
+            name="card"
+            pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+            title="Card number should be 16 digits"
+            required
+          />
+        </fieldset>
+        <button type="submit">Place Order</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 Gary Blue's Diner. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
